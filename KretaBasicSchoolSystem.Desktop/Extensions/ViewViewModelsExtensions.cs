@@ -11,7 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using KretaBasicSchoolSystem.Desktop.Views.SchoolClasses;
 using System.Windows.Forms;
 using SchoolClassesViewModel = KretaBasicSchoolSystem.Desktop.ViewModels.SchoolClasses.SchoolClassesViewModel;
-
+using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolSubjects;
+using KretaBasicSchoolSystem.Desktop.Views.SchoolSubjects;
+using KretaBasicSchoolSystem.Desktop.ViewModels.RestaurantsViewModel;
+using KretaBasicSchoolSystem.Desktop.Views.Restaurants;
 
 namespace KretaDesktop.Extensions
 {
@@ -55,9 +58,19 @@ namespace KretaDesktop.Extensions
             });
 
             services.AddSingleton<SchoolClassesViewModel>();
-            services.AddSingleton<SchoolClassesView>(s => new SchoolClassesViewModel()
+            services.AddSingleton<SchoolClassesView>(s => new SchoolClassesView()
             {
-
+                DataContext = s.GetRequiredService<SchoolClassesViewModel>()
+            });
+            services.AddSingleton<SchoolSubjectsViewModel>();
+            services.AddSingleton<SchoolSubjectsView>(s => new SchoolSubjectsView()
+            {
+                DataContext = s.GetRequiredService<SchoolSubjectsViewModel>()
+            });
+            services.AddSingleton<RestaurantsViewModel>();
+            services.AddSingleton<RestaurantsView>(s => new RestaurantsView()
+            {
+                DataContext = s.GetRequiredService<RestaurantsViewModel>()
             });
         }
     }
