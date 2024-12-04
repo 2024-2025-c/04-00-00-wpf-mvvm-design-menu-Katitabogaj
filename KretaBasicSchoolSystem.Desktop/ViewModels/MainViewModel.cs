@@ -6,6 +6,7 @@ using KretaBasicSchoolSystem.Desktop.ViewModels.ControlPanel;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolClasses;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolSubjects;
+using KretaBasicSchoolSystem.Desktop.ViewModels.Restaurants;
 
 namespace KretaBasicSchoolSystem.Desktop.ViewModels
 {
@@ -15,6 +16,7 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
         private SchoolCitizensViewModel _schoolCitizensViewModel;
         private SchoolClassesViewModel _schoolClassesViewModel;
         private SchoolSubjectsViewModel _schoolSubjectsViewModel;
+        private RestaurantsViewModel _restaurantsViewModel;
 
         public MainViewModel()
         {
@@ -22,6 +24,7 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             _schoolCitizensViewModel = new SchoolCitizensViewModel();
             _schoolClassesViewModel = new SchoolClassesViewModel();
             _schoolSubjectsViewModel = new SchoolSubjectsViewModel();
+            _restaurantsViewModel = new 
         }
 
         public MainViewModel(
