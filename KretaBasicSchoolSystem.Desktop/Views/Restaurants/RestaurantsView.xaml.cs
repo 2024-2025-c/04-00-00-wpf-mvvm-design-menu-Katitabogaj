@@ -18,7 +18,7 @@ namespace KretaBasicSchoolSystem.Desktop.Views.Restaurants
     /// <summary>
     /// Interaction logic for RestaurantsView.xaml
     /// </summary>
-    public partial class RestaurantsView : Page
+    public partial class RestaurantsView : UserControl
     {
         public RestaurantsView()
         {

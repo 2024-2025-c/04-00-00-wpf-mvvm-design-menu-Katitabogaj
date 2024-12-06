@@ -3,10 +3,10 @@ using CommunityToolkit.Mvvm.Input;
 using FontAwesome.Sharp;
 using KretaBasicSchoolSystem.Desktop.ViewModels.Base;
 using KretaBasicSchoolSystem.Desktop.ViewModels.ControlPanel;
+using KretaBasicSchoolSystem.Desktop.ViewModels.Restaurants;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolCitizens;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolClasses;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolSubjects;
-using KretaBasicSchoolSystem.Desktop.ViewModels.Restaurants;
 
 namespace KretaBasicSchoolSystem.Desktop.ViewModels
 {
@@ -24,14 +24,15 @@ namespace KretaBasicSchoolSystem.Desktop.ViewModels
             _schoolCitizensViewModel = new SchoolCitizensViewModel();
             _schoolClassesViewModel = new SchoolClassesViewModel();
             _schoolSubjectsViewModel = new SchoolSubjectsViewModel();
-            _restaurantsViewModel = new 
+            _restaurantsViewModel = new  RestaurantsViewModel();    
         }
 
         public MainViewModel(
             ControlPanelViewModel controlPanelViewModel,
             SchoolCitizensViewModel schoolCitizensViewModel,
             SchoolClassesViewModel schoolClassesViewModel,
-            SchoolSubjectsViewModel schoolSubjectsViewModel
+            SchoolSubjectsViewModel schoolSubjectsViewModel,
+            RestaurantsViewModel restaurantViewModel
             )
         {
             _controlPanelViewModel = controlPanelViewModel;

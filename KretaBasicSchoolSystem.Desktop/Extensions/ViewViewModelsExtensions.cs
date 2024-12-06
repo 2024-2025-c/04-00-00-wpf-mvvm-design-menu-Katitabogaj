@@ -9,12 +9,10 @@ using KretaBasicSchoolSystem.Desktop.Views.Login;
 using KretaBasicSchoolSystem.Desktop.Views.SchoolCitizens;
 using Microsoft.Extensions.DependencyInjection;
 using KretaBasicSchoolSystem.Desktop.Views.SchoolClasses;
-using System.Windows.Forms;
-using SchoolClassesViewModel = KretaBasicSchoolSystem.Desktop.ViewModels.SchoolClasses.SchoolClassesViewModel;
 using KretaBasicSchoolSystem.Desktop.ViewModels.SchoolSubjects;
 using KretaBasicSchoolSystem.Desktop.Views.SchoolSubjects;
-using KretaBasicSchoolSystem.Desktop.ViewModels.RestaurantsViewModel;
 using KretaBasicSchoolSystem.Desktop.Views.Restaurants;
+using KretaBasicSchoolSystem.Desktop.ViewModels.Restaurants;
 
 namespace KretaDesktop.Extensions
 {
