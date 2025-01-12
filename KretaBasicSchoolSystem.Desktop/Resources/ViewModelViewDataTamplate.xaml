@@ -24,7 +24,6 @@
     <DataTemplate DataType="{x:Type schoolClassesViewModels:SchoolClassesViewModel}">
         <schoolClassesView:SchoolClassesView/>
     </DataTemplate>
-
     <DataTemplate DataType="{x:Type schoolSubjectsViewModels:SchoolSubjectsViewModel}">
         <schoolSubjectsView:SchoolSubjectsView/>
     </DataTemplate>

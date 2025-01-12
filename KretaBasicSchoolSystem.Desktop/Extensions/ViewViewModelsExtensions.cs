@@ -70,6 +70,11 @@ namespace KretaDesktop.Extensions
             {
                 DataContext = s.GetRequiredService<RestaurantsViewModel>()
             });
+            services.AddSingleton<RestaurantsMenuViewModel>();
+            services.AddSingleton<RestaurantsView>(s => new RestaurantsView()
+            {
+                DataContext = s.GetRequiredService<RestaurantsView>()
+            });
         }
     }
 }
